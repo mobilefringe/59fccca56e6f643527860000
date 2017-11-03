@@ -10,6 +10,7 @@ For more information on asset types please see //www.getcodecloud.com/docs#SaSS
 /* COLOURS */
 $primary: #666;
 $secondary: #546B33;
+$main: #4a4a4a
 
 body {
     color:#4A4A4A;
@@ -843,11 +844,10 @@ h4 {
         }
     }
 }
-
 .site_map_heading{
     font-weight:bold;
     font-size: 14px;
-    color: #000;
+    color: #4A4A4A;
     letter-spacing: 0.29px;
     margin-top: 20px;
 }
