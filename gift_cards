@@ -27,7 +27,9 @@
     <div class="margin_25_across">
         <div class="row">
             <div class="col-md-12">
-                <div id="mm_page_content"></div>
+                <div id="mm_page_content">
+                    Content
+                </div>
             </div>
         </div>
     </div>
@@ -39,7 +41,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = prefix + "/pages/devonshire-gift-cards.json"
+            var pages_json = prefix + ".json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
