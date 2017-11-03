@@ -27,7 +27,7 @@
     <div class="margin_25_across">
         <div class="row">
             <div class="col-md-8">
-                <h2 class="margin_30">Welcome to Devonshire Mall</h4>
+                <h2 class="margin_30">Welcome to Mall Name</h4>
                 <p>Feel free to drop us a line!</p>
                 <br>
                 <div id="send_contact_success" class="alert alert-success hidden_now" role="alert">
