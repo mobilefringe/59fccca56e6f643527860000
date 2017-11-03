@@ -65,11 +65,11 @@
                         </div>
                     </div>
                 </form>
-                <hr>
-                <div id="mm_page_content"></div>
             </div>
             <div class="col-md-4">
-                <div id="mm_page_content_contact"></div>
+                <div id="mm_page_content">
+                    Content
+                </div>
             </div>
         </div>
     </div>
