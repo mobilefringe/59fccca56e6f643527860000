@@ -4,17 +4,14 @@
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
-        <div class="col-md-3">
+        <div class="col-md-4">
             <h5 class="active_heading">CONTACT US</h5>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <h5><a href="/directions">DIRECTIONS</a></h5>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <h5><a href="/leasing">LEASING</a></h5>
-        </div>
-        <div class="col-md-3">
-            <h5><a href="/security">SECURITY</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
@@ -22,7 +19,6 @@
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/directions">Directions</option>
             <option value="/leasing">Leasing</option>
-            <option value="/security">Security</option>
         </select>
     </h5>
 </div>
