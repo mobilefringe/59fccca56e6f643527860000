@@ -1,0 +1,56 @@
+<div class="inside_banner text-center">
+    <h3>DIRECTIONS</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-4">
+            <h5><a href="/contact_us">CONTACT US</a></h5>
+        </div>
+        <div class="col-md-4">
+            <h5 class="active_heading">DIRECTIONS</h5>
+        </div>
+        <div class="col-md-4">
+            <h5><a href="/leasing">LEASING</a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
+            <option value="/contact_us">Contact Us</option>
+            <option value="/leasing">Leasing</option>
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12">
+                <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5904.339282420372!2d-83.002073!3d42.274902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xffb5dac0f54be5d1!2sDevonshire+Mall!5e0!3m2!1sen!2sus!4v1502907058117" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div id="mm_page_content">
+                    Content
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/devonshire-directions.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
