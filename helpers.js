@@ -131,6 +131,10 @@ function show_content(){
     renderHomeHours('#home_hours_container3', '#home_hours_template3', getTodaysHours())
 }
 
+var default_image = {
+    "image_url" : "",
+}
+
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
         $('.main_row .col-md-6').addClass('full_width')
