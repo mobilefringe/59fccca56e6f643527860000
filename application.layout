@@ -45,7 +45,6 @@
     
     <!--MallMaverick SDK-->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
-    <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
     
     <script>
         setEndPoint('//twinpines.mallmaverick.com/api/v4/twinpines/all.json');
