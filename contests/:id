@@ -59,7 +59,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             promo_details = getEventDetailsBySlug(slug);
-            renderEventDetails('#promo_details_container', '#promo_details_template', promo_details, "Devonshire Mall")
+            renderEventDetails('#promo_details_container', '#promo_details_template', promo_details, "Twin Pines Mall"); //Add Mall Name
             show_content();
         }
         loadMallDataCached(renderAll); 
