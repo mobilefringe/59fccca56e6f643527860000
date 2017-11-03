@@ -121,7 +121,7 @@ function renderEventDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg";
+            val.store_image = default_image.image_url;
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
@@ -165,7 +165,7 @@ function renderGallery(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.photo_url.indexOf('missing.png') > -1) {
-            val.gallery_image = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg";
+            val.gallery_image = default_image.image_url;
         } else {
             val.gallery_image = "//www.mallmaverick.com" + val.photo_url;
         }
@@ -382,13 +382,13 @@ function renderJobDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg";
+            val.store_image = default_image.image_url;
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
         }
         if (val.store_image.indexOf('missing.png') > 0){
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg";
+            val.store_image = default_image.image_url;
         }
 
         var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
@@ -417,7 +417,7 @@ function renderPromotions(container, template, collection, centre){
             }
             
             if (store_details.store_front_url_abs.indexOf('missing.png') > 0){
-                val.image_url  = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg"
+                val.image_url  = default_image.image_url;
             }
             
             if(val.cat_list != null){
@@ -430,7 +430,7 @@ function renderPromotions(container, template, collection, centre){
             }
             val.store_slug = "/stores/" + store_details.slug
         } else {
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg";
+            val.image_url = default_image.image_url;
             val.store_name = mall_name;
             val.store_slug = "/"
             val.store_show = "display:none;";
@@ -470,7 +470,7 @@ function renderPromoDetails(container, template, collection, centre){
             val.store_name = store_details.name;
             
             if (store_details.store_front_url_abs.indexOf('missing.png') > 0){
-                val.store_image  = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg"
+                val.store_image  = default_image.image_url;
             } else {
                 val.store_image = store_details.store_front_url_abs;
             }
@@ -492,7 +492,7 @@ function renderPromoDetails(container, template, collection, centre){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg";
+            val.store_image = default_image.image_url;
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
@@ -610,7 +610,7 @@ function renderSinglePost(container, template, main_post){
     Mustache.parse(template_html);   // optional, speeds up future uses
 
     if (main_post.image_url.indexOf('missing.png') > 0) {
-        main_post.post_image = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg";
+        main_post.post_image = default_image.image_url;
     } else {
         main_post.post_image = main_post.image_url;
     }
@@ -624,7 +624,7 @@ function renderSinglePost(container, template, main_post){
     
     main_post.slug = "posts/" + main_post.slug;
     
-    main_post.twitter_title = main_post.title + " via @DevonshireMall";
+    main_post.twitter_title = main_post.title + " via @TwinPinesMall"; //Change to Mall Name
     
     var rendered = Mustache.render(template_html, main_post);
     item_list.push(rendered);
@@ -692,7 +692,7 @@ function renderStoreDetails(container, template, collection, slug){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1506715414000/devonshire_default.jpg";
+            val.alt_store_front_url = default_image.image_url;
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
