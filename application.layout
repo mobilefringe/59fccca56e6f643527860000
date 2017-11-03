@@ -83,9 +83,18 @@
 						<li><a href="/map">Centre Map</a></li>
 					</ul>
                 </li>
-                <li><a href="/promotions">PROMOTIONS</a></li>
-                <li><a href="/events">EVENTS</a></li>
-				<li><a href="/contests">CONTESTS</a></li>
+                <li>
+                    <a href="#"  class="submenu_expander">
+                        WHAT'S HAPPENING
+                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
+						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
+                    </a>
+                    <ul class="sub_menu hidden_now">
+                        <li><a href="/promotions">Promotions</a></li>
+                        <li><a href="/events">Events</a></li>
+                        <li><a href="/contests">Contests</a></li>
+					</ul>
+                </li>
                 <li>
                     <a href="#"  class="submenu_expander">
                         GUEST SERVICES
