@@ -56,7 +56,7 @@ $(document).ready(function(e){
 $("#subForm").submit(function( e ) {
     e.preventDefault();
     if ($("#agree_terms").prop("checked") != true){
-        alert("Please agree to receive newsletters from Devonshire Mall.");
+        alert("Please agree to receive newsletters from Mall Name.");
         $("#agree_terms").focus();
     } else {
         $.getJSON(
