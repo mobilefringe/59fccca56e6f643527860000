@@ -108,9 +108,6 @@
             var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
             var published_promos = [];
             $.each( store_promos , function( key, val ){
-                // today = new Date();
-                // webDate = new Date(val.show_on_web_date)
-                
                 today = moment();
                 webDate = moment(val.show_on_web_date);
                 if (today >= webDate) {
@@ -120,8 +117,7 @@
             if( published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
                 $('#promo_anchor span').text(published_promos.length)
-            }
-            else{
+            } else {
                 $('#promos_main').hide()
                 $('#promo_anchor').hide()
             }
@@ -130,9 +126,6 @@
             var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
             var published_jobs = [];
             $.each( store_jobs , function( key, val ){
-                // today = new Date();
-                // webDate = new Date(val.show_on_web_date)
-                
                 today = moment();
                 webDate = moment(val.show_on_web_date);
                 if (today >= webDate) {
@@ -142,12 +135,12 @@
             if( published_jobs.length > 0){
                 renderJobs('#jobs_container', '#jobs_template', published_jobs);
                 $('#job_anchor span').text(published_jobs.length)
-            }
-            else{
+            } else {
                 $('#jobs_main').hide();
                 $('#job_anchor').hide()
             }
             show_content();
+            
             var stores = getStoresList();
             var regions = {}
             $.each( stores , function( key, val ) {
