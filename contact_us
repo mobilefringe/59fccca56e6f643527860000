@@ -79,10 +79,8 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            prefix = get_prefix();
-            var pages_json = prefix + "/pages/devonshire-contact-us.json"
+            var prefix = get_prefix();
+            var pages_json = prefix + ".json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
@@ -90,14 +88,7 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
-            var contact_json = prefix + "/pages/devonshire-contact-info.json"
-            $.getJSON(contact_json).done(function(data) {
-                $('#mm_page_content_contact').html(data.body);
-            }).fail(function(jqXHR) {
-                if (jqXHR.status == 404) {
-                    $("#404_msg").fadeIn("fast");
-                }
-            }); 
+            
             show_content();
             
             $('#contact_form').submit(function(e) {
