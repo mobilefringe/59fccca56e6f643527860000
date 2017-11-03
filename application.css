@@ -561,6 +561,36 @@ h4 {
     }
 }
 
+.inside_banner{
+    background-color: #000;
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59fccca56e6f643527860000/image/png/1509741857000/test_banner.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding: 0 0 85px 0;
+    h3 {
+        margin: 0;
+        font-size: 54px;
+        color: #fff;
+        letter-spacing: 4px;
+        padding-top: 60px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        // font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        font-size: 24px;
+        color: #fff;
+        letter-spacing: 0.5px;
+        // font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+    }
+}
+
 .jobs_banner{
     background-color: #000;
     background-image: url(//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1505847053000/interior_banner.jpg);
