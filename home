@@ -10,11 +10,13 @@
     </a>
     <i class="fa fa-remove close_popup"></i>
 </div>
+<!-- Static Home Banner -->
 <div class="hero_banner text-center">
     <h3 class="animated bounce">Where Shopping Happens</h3>
     
     <a class="animated_btn" href="/stores">Visit Our Stores</a>
 </div>
+<!-- Carousel Home Banner -->
 <!--<div class="home_banner">-->
 <!--    <div class="flexslider text-center">-->
 <!--        <ul class="slides" id="home_banner">-->
