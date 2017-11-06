@@ -47,7 +47,7 @@
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
     
     <script>
-        setEndPoint('//twinpines.mallmaverick.com/api/v4/twinpines/all.json');
+        setEndPoint('//twinpines2.mallmaverick.com/api/v4/twinpines2/all.json');
         setSocialEndPoint('/social.json')
     </script>
     
