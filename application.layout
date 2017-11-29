@@ -240,7 +240,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h3 class="site_map_heading">© 2017 - MALL NAME</h3>
+                    <h3 class="site_map_heading">© <span id="current_year"></span> - MALL NAME</h3>
                     <p class="rights_reserved">
                         <a href="" target="_blank">
                             101 Downtown Ave, <br/>Toronto, ON L0L 1L0
