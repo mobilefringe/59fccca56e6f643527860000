@@ -263,6 +263,7 @@
     jQuery(document).ready(function($){
         $.getJSON("//twinpines.mallmaverick.com/api/v3/twinpines/messages.json").done(function(data){
             var messages = data.messages.bulletin
+            console.log(messages)
             if (messages != undefined){
                 if (messages.length == 0){
                     $('.news-ticker').hide();
