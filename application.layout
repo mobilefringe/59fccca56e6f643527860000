@@ -261,7 +261,7 @@
 <script>
     //Add messages.json url here if site is using messages
     jQuery(document).ready(function($){
-        $.getJSON("/messages.json").done(function(data){
+        $.getJSON("//thegateway.mallmaverick.com/api/v3/thegateway/messages.json").done(function(data){
             var messages = data.messages.bulletin
             if (messages != undefined){
                 if (messages.length == 0){
